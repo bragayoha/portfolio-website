@@ -9,14 +9,14 @@ const HeroSection = () => {
             <div className='grid grid-cols-1 sm:grid-cols-12'>
                 <div className='col-span-7 place-self-center text-center sm:text-left'>
                     <h1 className='text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold'>
-                        <span className='text-transparent bg-clip-text bg-gradient-to-r from-amber-700 to-red-950'>
+                        <span className='text-transparent bg-clip-text bg-gradient-to-r from-amber-800 to-green-800'>
                             Olá, eu sou o {''} 
                         </span>
                         <br></br>
                         <TypeAnimation
                         sequence={[
                             'Yoha',
-                            1000, // wait 1s before replacing "Mice" with "Hamsters"
+                            1000,
                             'Desenvolvedor Backend',
                             1000,
                             'Desenvolvedor Web',
@@ -31,10 +31,10 @@ const HeroSection = () => {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
                     </p>
                     <div>
-                        <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-orange-900 via-amber-700 to-red-950 hover:bg-slate-200 text-white'>
+                        <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-amber-800 to-green-950 hover:bg-slate-200 text-white'>
                             Me Contrate
                         </button>
-                        <button className='px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-b from-orange-900 via-amber-700 to-red-950 hover:bg-slate-800 text-white mt-3'>
+                        <button className='px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-b from-green-800 via-amber-800 to-green-950 hover:bg-slate-800 text-white mt-3'>
                             <span className='block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2'>
                                 Baixar CV
                             </span>
