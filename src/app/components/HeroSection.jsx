@@ -3,6 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion'
+import Link from 'next/link';
 
 const HeroSection = () => {
     return (
@@ -37,14 +38,18 @@ const HeroSection = () => {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
                     </p>
                     <div>
-                        <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-800 to-secondary-950 hover:bg-slate-200 text-white'>
-                            Me Contrate
-                        </button>
-                        <button className='px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-b from-secondary-800 via-primary-800 to-secondary-950 hover:bg-slate-800 text-white mt-3'>
-                            <span className='block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2'>
-                                Baixar CV
-                            </span>
-                        </button>
+                        <Link href='#contact'>
+                            <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-800 to-secondary-950 hover:bg-slate-200 text-white'>
+                                Me Contrate
+                            </button>
+                        </Link>
+                        <a href='https://drive.google.com/uc?export=download&id=1Wsu6pJ2W7Y0mM5nS4cdv2u7gf-dJ29Kg' download>
+                            <button className='px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-b from-secondary-800 via-primary-800 to-secondary-950 hover:bg-slate-800 text-white mt-3'>
+                                <span className='block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2'>
+                                    Baixar CV
+                                </span>
+                            </button>
+                        </a>
                     </div>
                 </motion.div>
                 <motion.div 
@@ -57,7 +62,7 @@ const HeroSection = () => {
                         <Image
                             src='/images/hero-img.png'
                             alt='hero image'
-                            className='absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'
+                            className='absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full'
                             width={300}
                             height={300}
                         />
