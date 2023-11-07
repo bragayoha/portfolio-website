@@ -4,9 +4,9 @@ import React, { useState } from 'react'
 import NavLink from './NavLink'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
 import MenuOverlay from './MenuOverlay'
-import { Pixelify_Sans } from 'next/font/google'
+import { DM_Sans } from 'next/font/google'
 
-const logoFontFamily = Pixelify_Sans({
+const logoFontFamily = DM_Sans({
     weight: ['400', '500', '600', '700'],
     subsets: ['latin']
 })
@@ -32,7 +32,7 @@ const Navbar = () => {
     return (
         <nav className='fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100'>
             <div className='flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2'>
-                <Link href={'/'} className={'text-2xl md:text-5xl text-[#D4C1A9] font-semibold '+logoFontFamily.className}>
+                <Link href={'/'} className={'text-2xl md:text-5xl text-[#ADB7BE] font-semibold '+logoFontFamily.className}>
                     YOHA
                 </Link>
                 <div className='mobile-menu block md:hidden'>
