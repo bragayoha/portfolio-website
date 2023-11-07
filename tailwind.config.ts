@@ -17,7 +17,7 @@ const config: Config = {
     },
     colors: {
       ...colors,
-      primary: colors.amber,
+      primary: colors.gray,
       secondary: colors.green,
     },
   },
